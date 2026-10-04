@@ -5,8 +5,8 @@
 
 /**
  *
- * @author alumno
+ * @author Usuario
  */
-public class Ejercicio9 {
+public class ejercicio26 {
     
 }
