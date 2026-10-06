@@ -10,37 +10,34 @@ import java.util.Scanner;
  *
  * @author alumno
  */
+import java.util.Scanner;
+
 public class Ejercicio18 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
-        
+
         Scanner entrada = new Scanner(System.in);
-        //do while
-       int contraseña;
-       int numero =1234;
+
+        int contraseña;
+        int numero = 1234;
+        int intentos = 0;
+
         do {
-            // Comprobamos si el número actual es par
-         System.out.print("Por favor, introduzca su contraseña: ");
-         contraseña = entrada.nextInt();    
-            switch(contraseña){
-            case 1-> 
-                if (contraseña >=numero ) {
-                System.out.println("Enhorabuena, tu acceso ha sido consedido");
+            System.out.print("Por favor, introduzca su contraseña: ");
+            contraseña = entrada.nextInt();
+
+            if (contraseña == numero) {
+                System.out.println("Enhorabuena, tu acceso ha sido concedido");
+            } else {
+                intentos++;
+                System.out.println("Contraseña incorrecta");
             }
 
-            case 2 -> System.out.println("Contraseña Incorrecta");
-            case 3 -> System.out.println("Contraseña Incorrecta");
-            case 4 -> System.out.println("Contraseña Incorrecta");
-            default -> {
-                System.out.println("Ese fuè tu ultimo intento, hasta pronto");
-            }
-            }
+        } while (contraseña != numero && intentos < 3);
 
-        } while (contraseña !=4);   
+        if (contraseña != numero) {
+            System.out.println("Error de acceso. Has superado los 3 intentos.");
+        }
+
+    }
 }
-}    
-
