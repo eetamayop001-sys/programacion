@@ -18,8 +18,7 @@ public class Ejercicio10 {
         // TODO code application logic here
         //for
             System.out.println("Mostrar mensaje Hola 5 veces");
-        int hola = 0;
-            for(int i =hola; i <5; i++){
+            for(int i =0; i <5; i++){
             System.out.println("Hola");
         }
                 

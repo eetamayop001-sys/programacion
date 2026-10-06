@@ -18,16 +18,16 @@ public class Ejercicio12 {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner entrada = new Scanner(System.in);
-        
-//do while
-        int num1=0;
-        int num2=0;
-        System.out.println(" do while");
-        do{
-            System.out.println(num1);
-        }while(num1 % 2 == 0);
-   
-                
+        //do while
+        int numero = 11;
+
+        do {
+            // Comprobamos si el número actual es par
+            if (numero % 2 == 0) {
+                System.out.println(numero);
+            }
+            numero++; 
+        } while (numero <= 133);                
     }
     
 }

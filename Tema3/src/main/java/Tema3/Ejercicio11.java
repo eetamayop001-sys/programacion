@@ -6,19 +6,24 @@ package Tema3;
 
 /**
  *
- * @author alumno
+ * @author Usuario
  */
-public class Ejercicio14 {
+public class Ejercicio11 {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
-                System.out.println("Los 100 primeros números pares son:");
+        System.out.print(" - ");
         
-        for (int i = 1; i <= 100; i++) {
-            System.out.println(i * 2);    
+        for (int i = 1; i <= 6; i++) {
+            System.out.print("Hola" + i + " – ");
         }
+        
     }
+    
 }
+
+
+  

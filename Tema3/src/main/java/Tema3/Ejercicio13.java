@@ -16,15 +16,16 @@ public class Ejercicio13 {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner entrada = new Scanner(System.in);
-                        //for
-                int indice =0;
-                indice =0;
-                        System.out.println("for");
-                for(int i =0; i <10; i++){
-                    if(i%2 !=0){
-                    System.out.println(i);
-                    }
-                }
+                     
+        int numero =11;
+        while (numero <= 133) {
+            // Comprobamos si el número actual es par
+            if (numero % 2 == 0) {
+                System.out.println(numero);
+            }
+            numero++; 
+        }
     }
-    
 }
+     
+
