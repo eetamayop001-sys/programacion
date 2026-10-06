@@ -18,7 +18,7 @@ public class Ejercicio13 {
         Scanner entrada = new Scanner(System.in);
                      
         int numero =11;
-        while (numero <= 133) {
+        while (numero < 133) {
             // Comprobamos si el número actual es par
             if (numero % 2 == 0) {
                 System.out.println(numero);

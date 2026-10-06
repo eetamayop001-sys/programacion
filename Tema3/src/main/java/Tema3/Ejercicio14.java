@@ -15,9 +15,10 @@ public class Ejercicio14 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-                System.out.println("Los 100 primeros números pares son:");
+        System.out.println("Los 100 primeros números pares son:");
         
-        for (int i = 1; i <= 100; i++) {
+        for (int i = 1; i < 100; i++) {
+           //multiplicamos por 2 para los numeros pares 
             System.out.println(i * 2);    
         }
     }

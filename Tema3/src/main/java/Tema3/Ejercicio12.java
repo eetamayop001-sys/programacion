@@ -27,7 +27,7 @@ public class Ejercicio12 {
                 System.out.println(numero);
             }
             numero++; 
-        } while (numero <= 133);                
+        } while (numero < 133);                
     }
     
 }

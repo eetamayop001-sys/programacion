@@ -21,7 +21,7 @@ public class Ejercicio15 {
         int numero = entrada.nextInt();
 
         // Calculamos e imprimimos la tabla 
-        for (int i = 0; i <= 10; i++) {
+        for (int i = 0; i <= 12; i++) {
             System.out.println(numero + " x " + i + " = " + (numero * i));
         }                
     }    
