@@ -32,12 +32,13 @@ public class Ejercicio18 {
                 intentos++;
                 System.out.println("Contraseña incorrecta");
             }
-
+            
+            if (contraseña == numero) {
+            System.out.println("Error de acceso. Has superado los 3 intentos.");
+            }
         } while (contraseña != numero && intentos < 3);
 
-        if (contraseña != numero) {
-            System.out.println("Error de acceso. Has superado los 3 intentos.");
-        }
+
 
     }
 }
