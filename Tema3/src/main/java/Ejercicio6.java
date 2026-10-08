@@ -14,7 +14,7 @@ public class Ejercicio6 {
     public static void main(String[] args) {
        Scanner entrada = new Scanner(System.in);
        int nota;
-       System.out.print("Por favor, introduzca la nota del alumno: ");
+       System.out.println("Por favor, introduzca la nota del alumno: ");
        nota = entrada.nextInt();
        
        if (nota < 0 || nota > 10) {

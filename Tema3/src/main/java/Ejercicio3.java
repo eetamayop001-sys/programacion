@@ -13,15 +13,15 @@ public class Ejercicio3 {
     public static void main(String[] args) {
        Scanner entrada = new Scanner(System.in);
        int num1;
-       System.out.print("Por favor, introduzca un numero: ");
+       System.out.println("Por favor, introduzca un numero: ");
        num1 = entrada.nextInt();
        
        int num2;
-       System.out.print("Ahora, introduzca un segundo numero: ");
+       System.out.println("Ahora, introduzca un segundo numero: ");
        num2 = entrada.nextInt();
        
         int num3;
-       System.out.print("Por ultimo, introduzca un tercer numero: ");
+       System.out.println("Por ultimo, introduzca un tercer numero: ");
        num3 = entrada.nextInt();
        
        if (num1 > num2 && num1>num3) {

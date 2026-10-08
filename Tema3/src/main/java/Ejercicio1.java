@@ -13,7 +13,7 @@ public class Ejercicio1 {
    public static void main(String[] args) {
        Scanner entrada = new Scanner(System.in);
        int numero;
-       System.out.print("Por favor, introduzca un numero: ");
+       System.out.println("Por favor, introduzca un numero: ");
        numero = entrada.nextInt();
        
        if (numero > 0) {
