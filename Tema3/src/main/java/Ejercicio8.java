@@ -53,7 +53,5 @@ public class Ejercicio8 {
         if (m1 > 0) {
             System.out.println(m1 + " monedas de 1 euro");
         }
-
-        scanner.close();
     }
 }

@@ -69,6 +69,5 @@ public class Ejercicio9 {
 // RESULTADO
         System.out.println("El orden de los números introducidos es el " + num1 + " - " + num2 + " - " + num3 + " - " + num4);
         
-        entrada.close();
     }
 }
