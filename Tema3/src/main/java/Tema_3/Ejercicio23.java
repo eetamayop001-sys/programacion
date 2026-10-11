@@ -4,7 +4,7 @@
  */
 package Tema_3;
 
-import java.util.InputMismatchException;
+
 import java.util.Scanner;
 
 /**
@@ -19,27 +19,24 @@ public class Ejercicio23 {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner entrada = new Scanner(System.in);
-        //do while
-        int numero1 = 1 ;
-        int numero2;
-        int cantidad= 0;
+        //creamos la variable que sera el numero ingresado por el usuario
+        int numeroIngresado;
+        //usamos do while porque le pedimos al usuario un numero y luego comprobamos si el numero ingresado es el correcto
+        do{ 
+        System.out.println("Introduzca un numero:");
+        numeroIngresado = entrada.nextInt();
         
-        try{
-        System.out.print("Introduzca un numero:");
-        numero2 =entrada.nextInt();      
-        System.out.print("Introduzca un segundo numero:");
-        numero2 =entrada.nextInt();          
-        do {
-            System.out.println("Los numeros existentes son los siguientes" +numero2);// Comprobamos si el número iingresado es mayor
-            cantidad++;
-            numero2++; 
-        } while (numero2 < 1);
-        } catch(InputMismatchException e){
-//MUESTRA EL MENSASJE DE ERROR
-            System.out.println("ERROR; DEBES DE SELECCIONAR UN NUMERO ENTERO");  
+        //usamos un condicional para que aparezca el mensaje de error si el usuario ingresa un numero menor que 1 
+        if(numeroIngresado <=1){
+        System.out.println("ERROR, NUMERO INVALIDO  ");
         }
-    }
-    
+        }while(numeroIngresado <=1);
+        
+        //Usamos for porque sabemos que empieza desde el numero 1 
+        for(int i=1; i<=numeroIngresado; i++){
+        System.out.println(i);         
+        }
+    }    
 }
         
 

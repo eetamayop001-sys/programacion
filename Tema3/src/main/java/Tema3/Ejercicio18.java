@@ -38,7 +38,5 @@ public class Ejercicio18 {
             }
         } while (contraseña != numero && intentos < 3);
 
-
-
     }
 }

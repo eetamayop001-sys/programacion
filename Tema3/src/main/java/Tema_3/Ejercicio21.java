@@ -28,8 +28,8 @@ public class Ejercicio21 {
 //pedir el segundo numero
         System.out.print("Introduzca un segundo numero:");
         num2 =entrada.nextInt();
-//SE REALIZA LA SUMA DE LOS DOS NUMEROS INTRODUCIDOS           
-        resultadoDivision = num1/num2;
+//SE REALIZA LA division DE LOS DOS NUMEROS INTRODUCIDOS           
+        resultadoDivision = num1% num2;
 //MOSTRAR EL RESULTADO
          System.out.println("Tu division es:"+resultadoDivision);
         } catch(ArithmeticException e){
