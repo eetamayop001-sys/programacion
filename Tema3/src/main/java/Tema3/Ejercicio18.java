@@ -17,7 +17,7 @@ public class Ejercicio18 {
     public static void main(String[] args) {
 
         Scanner entrada = new Scanner(System.in);
-
+//declaramos las variables
         int contraseña;
         int numero = 1234;
         int intentos = 0;
@@ -33,10 +33,10 @@ public class Ejercicio18 {
                 System.out.println("Contraseña incorrecta");
             }
             
-            if (contraseña == numero) {
+            //numeros de intentos
+        } while (contraseña != numero && intentos < 3);
+        if (contraseña == numero) {
             System.out.println("Error de acceso. Has superado los 3 intentos.");
             }
-        } while (contraseña != numero && intentos < 3);
-
     }
 }

@@ -14,6 +14,8 @@ public class Ejercicio26 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        
+        //creamos las variables
         int numero = 111;
         int suma = 0;
 
@@ -26,7 +28,7 @@ public class Ejercicio26 {
             }
             // se incrementara el numero
             numero++; 
-        } while (numero <= 222);  
+        } while (numero < 222);  
         //muestra el resultado
         System.out.println("La suma total de los numeros es:" + suma);
     }

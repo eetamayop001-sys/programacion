@@ -18,21 +18,21 @@ public class Ejercicio27 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-                        //MENUS
+        //MENUS
 
         // Declaramos las variables
         int opc = 0; // Guarda la opción elegida en el menú
-        double numero1; // Guarda el primer número
-        double numero2; // Guarda el segundo número
+        int numero1; // Guarda el primer número
+        int numero2; // Guarda el segundo número
 
         Scanner entrada = new Scanner(System.in); // Lee los datos del usuario
 
         // Pedimos los dos números
         System.out.print("Introduce el primer número: ");
-        numero1 = entrada.nextDouble();
+        numero1 = entrada.nextInt();
 
         System.out.print("Introduce el segundo número: ");
-        numero2 = entrada.nextDouble();
+        numero2 = entrada.nextInt();
 
         // Repetimos el menú mientras la opción no sea 5
         do {
@@ -96,14 +96,11 @@ public class Ejercicio27 {
             } catch (InputMismatchException e) {
                 // Controlamos si el usuario introduce texto en lugar de un entero
                 System.out.println("Dato no válido: debes introducir un número entero.");
-
-                // Limpiamos el dato incorrecto del Scanner
-                entrada.nextLine();
-
-                // Evitamos que el programa salga del bucle por un dato incorrecto
-                opc = 0;
+  
             }
 
         } while (opc != 5); // Repetimos hasta que el usuario elija salir
     }
 }
+
+//corregir , no corregir :)

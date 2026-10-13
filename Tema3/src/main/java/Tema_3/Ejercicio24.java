@@ -19,6 +19,8 @@ public class Ejercicio24 {
         // TODO code application logic here
         
         Scanner entrada = new Scanner(System.in);
+        
+        //creamos las variables
         int numeroIngresado;
         int contador = 0; 
 
@@ -27,12 +29,13 @@ public class Ejercicio24 {
             System.out.println("Introduzca un numero mayor que 0:");
             numeroIngresado = entrada.nextInt();
 
-            // Comprueba si el número es inválido
-            if (numeroIngresado <= 0) {
+            // Comprueba si el número es inválido, usamos un if para que aparezca el mensaje de error
+            if (numeroIngresado < 0) {
                 System.out.println("ERROR, NUMERO INVALIDO");
             }
-        } while (numeroIngresado <= 0); 
-        // Recorre los números desde 1 hasta el número introducido
+        } while (numeroIngresado < 0); 
+        
+// Recorre los números desde 1 hasta el número introducido
         for (int i = 1; i <= numeroIngresado; i++) {
 
             // Comprueba si el número es múltiplo de 3
@@ -47,3 +50,4 @@ public class Ejercicio24 {
     }
 }
   
+//modificar el for

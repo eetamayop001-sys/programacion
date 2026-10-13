@@ -15,8 +15,12 @@ public class Ejercicio22 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // Creamos las variables
-        int num1, num2, resultadoSuma;       
+    // Creamos las variables
+        int num1;
+        int num2; 
+        int resultadoSuma;       
+    
+//usamos un try catch para capturar la excepcion
         try{
             
 //pedir el primer numero

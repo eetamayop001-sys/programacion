@@ -18,7 +18,13 @@ public class Ejercicio21 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-                int num1, num2, resultadoDivision;       
+        
+        //declaramos las variables
+        int num1; 
+        int num2; 
+        int resultadoDivision;       
+       
+        //usamos un try catch para capturar la excepcion
         try{
             
 //pedir el primer numero
@@ -29,7 +35,7 @@ public class Ejercicio21 {
         System.out.print("Introduzca un segundo numero:");
         num2 =entrada.nextInt();
 //SE REALIZA LA division DE LOS DOS NUMEROS INTRODUCIDOS           
-        resultadoDivision = num1% num2;
+        resultadoDivision = num1/ num2;
 //MOSTRAR EL RESULTADO
          System.out.println("Tu division es:"+resultadoDivision);
         } catch(ArithmeticException e){

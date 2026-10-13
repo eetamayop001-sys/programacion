@@ -16,7 +16,7 @@ public class Ejercicio25 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        //do while
+        //creamos las variables
         int numero = 17;
         int suma = 0;
 
@@ -29,7 +29,8 @@ public class Ejercicio25 {
             }
             // se incrementara el numero
             numero++; 
-        } while (numero <= 139);  
+  
+        } while (numero < 139);  
         //muestra el resultado
         System.out.println("La suma total de los numeros es:" + suma);
     }

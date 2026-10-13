@@ -21,19 +21,20 @@ public class Ejercicio23 {
         Scanner entrada = new Scanner(System.in);
         //creamos la variable que sera el numero ingresado por el usuario
         int numeroIngresado;
-        //usamos do while porque le pedimos al usuario un numero y luego comprobamos si el numero ingresado es el correcto
+        //usamos do while 
         do{ 
         System.out.println("Introduzca un numero:");
         numeroIngresado = entrada.nextInt();
         
-        //usamos un condicional para que aparezca el mensaje de error si el usuario ingresa un numero menor que 1 
-        if(numeroIngresado <=1){
+        //usamos un if para que aparezca el mensaje de error si el usuario ingresa un numero menor que 1 
+
+        if(numeroIngresado <1){
         System.out.println("ERROR, NUMERO INVALIDO  ");
         }
-        }while(numeroIngresado <=1);
+        }while(numeroIngresado <1);
         
-        //Usamos for porque sabemos que empieza desde el numero 1 
-        for(int i=1; i<=numeroIngresado; i++){
+        //Usamos for porque sabemos desde donde empieza
+        for(int i=1; i<numeroIngresado; i++){
         System.out.println(i);         
         }
     }    
