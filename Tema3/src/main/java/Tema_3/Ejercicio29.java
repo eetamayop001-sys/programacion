@@ -17,12 +17,28 @@ public class Ejercicio29 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-                //creamos las variables
-        int numero1 = 1;
-        int numero2 = 0;
-        
+        //creamos las variables       
+        int numeroIngresado;  
+              
         Scanner entrada = new Scanner(System.in);
-        System.out.println("Adivina.sw el numero entero:");
+        System.out.print("Introduzca un numero:");
+        numeroIngresado =entrada.nextInt();    
+        
+        double aleatorio =(Math.random()*100+1);
+        aleatorio =Math.floor(aleatorio);
+        int aleatorioEntero = (int) aleatorio;
+        
+        do{
+            // Comprobamos si el número actual es par
+            if (aleatorio > numeroIngresado) {
+            System.out.print("¡Cerca! El numero a adivinar es mayor");
+             } else if (aleatorio < numeroIngresado) {                
+             System.out.println(aleatorio + "-numero impar" );                  
+          }
+            }
+            // se incrementara el numero
+            numeroIngresado++;  
+        }while();        
     }
-    
 }
+  

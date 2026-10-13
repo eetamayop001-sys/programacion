@@ -32,7 +32,7 @@ public class Ejercicio18 {
                 intentos++;
                 System.out.println("Contraseña incorrecta");
             }
-            
+             
             //numeros de intentos
         } while (contraseña != numero && intentos < 3);
         if (contraseña == numero) {
