@@ -4,41 +4,53 @@
  */
 package Tema_3;
 
-import java.util.Scanner;
-
 /**
  *
- * @author alumno
+ * @author Usuario
  */
+
+
+
+import java.util.Scanner;
+
 public class Ejercicio29 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
-        //creamos las variables       
-        int numeroIngresado;  
-              
-        Scanner entrada = new Scanner(System.in);
-        System.out.print("Introduzca un numero:");
-        numeroIngresado =entrada.nextInt();    
-        
-        double aleatorio =(Math.random()*100+1);
-        aleatorio =Math.floor(aleatorio);
+
+        // Creamos las variables
+        int numeroIngresado = 0;
+        int intentos = 0;
+
+        // Generamos un número aleatorio entre 1 y 100
+        double aleatorio = Math.random() * 100 + 1;
+        aleatorio = Math.floor(aleatorio);
+        // Convertimos el número decimal en entero
         int aleatorioEntero = (int) aleatorio;
-        
-        do{
-            // Comprobamos si el número actual es par
-            if (aleatorio > numeroIngresado) {
-            System.out.print("¡Cerca! El numero a adivinar es mayor");
-             } else if (aleatorio < numeroIngresado) {                
-             System.out.println(aleatorio + "-numero impar" );                  
-          }
-            }
-            // se incrementara el numero
-            numeroIngresado++;  
-        }while();        
+
+        Scanner entrada = new Scanner(System.in);
+
+
+        do {
+            System.out.print("Introduce un número: ");
+            numeroIngresado = entrada.nextInt();
+            intentos++;
+               
+                // Comprobamos si el número aleatorio es mayor
+                if (aleatorioEntero > numeroIngresado) {
+                    System.out.println("¡Casi! El número a adivinar es mayor");
+
+                // Comprobamos si el número aleatorio es menor
+                } else if (aleatorioEntero < numeroIngresado) {
+                    System.out.println("¡Casi! El número a adivinar es menor");
+
+                // Si no es mayor ni menor, el usuario ha acertado
+                } else {
+                    System.out.println("¡Has acertado!");
+                }
+
+        // Repetimos mientras el número introducido sea distinto del aleatorio
+        } while (numeroIngresado != aleatorioEntero);
+
+        System.out.println("Número de intentos: " + intentos);
     }
 }
-  
