@@ -23,6 +23,7 @@ public class Ejercicio30 {
         // Generamos un número aleatorio entre 1 y 100
         double aleatorio = (Math.random() * 100 + 1);
         aleatorio = Math.floor(aleatorio);
+        //Convertimos el número decimal en entero
         int aleatorioEntero = (int) aleatorio;
 
         Scanner entrada = new Scanner(System.in);
@@ -30,19 +31,17 @@ public class Ejercicio30 {
         // Repetimos la petición de número hasta que el usuario lo adivine
         do {
             System.out.print("Introduce un número (entre 1 y 100): ");
-            intentos++; // Sumamos un intento tanto si es válido como si falla
-
+             intentos++;
             try {
-                // Intentamos leer el entero
                 numeroIngresado = entrada.nextInt();
 
                 // Comprobamos si el número a adivinar es mayor
                 if (aleatorioEntero > numeroIngresado) {
-                    System.out.println("El número que tienes que adivinar es MAYOR.");
+                    System.out.println("¡Casi! El número que tienes que adivinar es MAYOR.");
 
                 // Comprobamos si el número a adivinar es menor
                 } else if (aleatorioEntero < numeroIngresado) {
-                    System.out.println("El número que tienes que adivinar es MENOR.");
+                    System.out.println("¡Casi! El número que tienes que adivinar es MENOR.");
 
                 // Si no es ni mayor ni menor, el usuario ha acertado
                 } else {
@@ -50,17 +49,13 @@ public class Ejercicio30 {
                 }
 
             } catch (InputMismatchException e) {
-                // Avisamos del error si introduce algo que no es un entero (ej. una letra)
-                System.out.println("Error: Has introducido un valor no válido (debes introducir un número entero).");
-                  
+                System.out.println("Error: Has introducido un valor no válido (debes introducir un número entero).");   
+                entrada.next(); //se encaraga de limpiar un numero que no es entero; limpiar el buffer
             }
-
-        // El bucle continúa mientras el número ingresado no sea igual al aleatorio
-        } while (numeroIngresado != aleatorioEntero);
-
-        // Mostramos el total de intentos al acertar
+                   
+        }while (numeroIngresado != aleatorioEntero);
+       
         System.out.println("Número de intentos utilizados: " + intentos);
     }
 }
 
-// Reiniciamos el Scanner para descartar el texto erróneo introducido  entrada = new Scanner(System.in);

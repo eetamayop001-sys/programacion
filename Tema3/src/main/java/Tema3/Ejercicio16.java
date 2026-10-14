@@ -17,8 +17,7 @@ public class Ejercicio16 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-                Scanner entrada = new Scanner(System.in);
-                     
+        Scanner entrada = new Scanner(System.in);
         System.out.println("Los números impares existentes entre el número 20 y el 160 son: ");
 
 //declaramos las variables
@@ -30,7 +29,7 @@ public class Ejercicio16 {
 // Comprobamos si el número actual es impar
 
             if (numero % 2 !=0) {
-            System.out.print("-" + numero);
+            System.out.println("-" + numero);
             cantidad++;
             }
             numero++;
@@ -39,3 +38,4 @@ public class Ejercicio16 {
         //se imprime la cantidad de numero impares que hay 
             System.out.println("La cantidad de numeros impares impresos han sido: " + cantidad);  
     }   }
+//corregir

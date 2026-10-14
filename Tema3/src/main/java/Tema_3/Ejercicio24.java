@@ -49,5 +49,5 @@ public class Ejercicio24 {
         System.out.println("Total de numeros mostrados: " + contador);
     }
 }
-  
-//modificar el for
+
+//revisar 

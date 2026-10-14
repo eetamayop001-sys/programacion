@@ -28,8 +28,7 @@ public class Ejercicio31 {
         while (contadorImpares < 3) {
 
             //generamos un numero aleatorio entre 1 y 100     
-            double aleatorio =(Math.random()*100+1);
-            aleatorio=Math.floor(aleatorio);
+            double aleatorio =Math.floor(Math.random()*100+1);
             //convertimos en entero
             int aleatorioEntero = (int) aleatorio;
             contadorIntentos++;
@@ -38,10 +37,10 @@ public class Ejercicio31 {
             if (aleatorioEntero % 2 != 0) {
             contadorImpares++;
 
-            if (contadorImpares == 1) {
-                    impar1 = aleatorioEntero;
+            if(contadorImpares == 1) {
+                impar1 = aleatorioEntero;
             } else if (contadorImpares == 2) {
-                    impar2 = aleatorioEntero;
+                impar2 = aleatorioEntero;
             } else {
                     impar3 = aleatorioEntero;
                 }
@@ -58,3 +57,4 @@ public class Ejercicio31 {
     }
 }
     
+//usar un do while

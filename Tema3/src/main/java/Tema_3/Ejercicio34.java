@@ -80,4 +80,6 @@ public class Ejercicio34 {
     }
 }
 
+//corregir este ejercicio, basarme en el ejercicio de los billetes
+//individualmente ir probando 
     

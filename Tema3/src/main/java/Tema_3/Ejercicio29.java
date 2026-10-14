@@ -21,14 +21,11 @@ public class Ejercicio29 {
         int numeroIngresado = 0;
         int intentos = 0;
 
-        // Generamos un número aleatorio entre 1 y 100
-        double aleatorio = Math.random() * 100 + 1;
-        aleatorio = Math.floor(aleatorio);
-        // Convertimos el número decimal en entero
-        int aleatorioEntero = (int) aleatorio;
+        // 
+        // Generamos un número aleatorio entre 1 y 100  Convertimos el número decimal en entero
+        int aleatorioEntero = (int)(Math.random()*100+1);
 
         Scanner entrada = new Scanner(System.in);
-
 
         do {
             System.out.print("Introduce un número: ");

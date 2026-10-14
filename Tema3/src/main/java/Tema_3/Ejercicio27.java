@@ -51,23 +51,10 @@ public class Ejercicio27 {
 
                 // Ejecutamos la operación elegida
                 switch (opc) {
-
-                    case 1:
-                        // Sumamos los números
-                        System.out.println("Resultado: " + (numero1 + numero2));
-                        break;
-
-                    case 2:
-                        // Restamos los números
-                        System.out.println("Resultado: " + (numero1 - numero2));
-                        break;
-
-                    case 3:
-                        // Multiplicamos los números
-                        System.out.println("Resultado: " + (numero1 * numero2));
-                        break;
-
-                    case 4:
+                    case 1->System.out.println("Resultado: " + (numero1 + numero2));
+                    case 2->System.out.println("Resultado: " + (numero1 - numero2));                   
+                    case 3->System.out.println("Resultado: " + (numero1 * numero2));
+                    case 4->
                     try {
         // Comprobamos si el divisor es cero
                     if (numero2 == 0) {
@@ -103,4 +90,5 @@ public class Ejercicio27 {
     }
 }
 
-//corregir , no corregir :)
+
+//corregir :)

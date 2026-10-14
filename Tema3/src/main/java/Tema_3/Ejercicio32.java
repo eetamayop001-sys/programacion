@@ -85,8 +85,8 @@ public class Ejercicio32 {
 
         // Si el mes actual resulta ser menor al de nacimiento (o quedó negativo por el ajuste anterior)
         if (meses < 0) {
-            anios = anios - 1; // Restamos 1 año porque aún no ha cumplido años este año
-            meses = meses + 12; // Sumamos 12 meses para obtener los meses reales cumplidos
+            anios = anios - 1; 
+            meses = meses + 12; 
         }
 
         // Mostramos el mensaje final con el resultado exacto
@@ -94,3 +94,4 @@ public class Ejercicio32 {
     }
 }
     
+//corregir este ejercicio, con decrementar con mn

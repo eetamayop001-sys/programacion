@@ -17,17 +17,15 @@ public class Ejercicio28 {
         // TODO code application logic here
         
 //generamos un numero aleatorio entre 1 y 100     
-          double aleatorio =(Math.random()*100+1);
-          aleatorio=Math.floor(aleatorio);
-          //convertimos en entero
-          int aleatorioEntero = (int) aleatorio;  
+          double aleatorio =Math.floor(Math.random()*100+1);
           
           //comprobamos si el  numero es par o impar
           if (aleatorio % 2 == 0) {
-            System.out.println("El numero es:" +aleatorioEntero + "-numero par" ); 
-          
+            System.out.println("El numero es:" +aleatorio); 
+            System.out.println("Numero par");
           } else {                
-             System.out.println("El numero es:" +aleatorioEntero + "-numero impar" );                  
+            System.out.println("El numero es:" +aleatorio);  
+            System.out.println("Numero impar");
           }
           
     }
