@@ -67,7 +67,7 @@ public class Ejercicio27 {
         // Mostramos el mensaje si ocurre un error aritmético
                 System.out.println("Error al realizar la división");
                 }
-                break;
+             
 
                     case 5:
                         // Mensaje de salida
