@@ -1,0 +1,44 @@
+-J-Duser.language=
+-J-Duser.country=
+@options
+@packages
+--no-fonts
+-encoding
+'UTF-8'
+-protected
+--release
+27
+-sourcepath
+'C:/Users/Usuario/Documents/NetBeansProjects/Tema4/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2026. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/Usuario/Documents/NetBeansProjects/Tema4/target/reports/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'Tema4 1.0-SNAPSHOT API'
+-use
+-version
+-windowtitle
+'Tema4 1.0-SNAPSHOT API'
+com.mycompany.tema4
+operaciones
+C:\Users\Usuario\Documents\NetBeansProjects\Tema4\src\main\java = 1792491811026
+C:\Users\Usuario\Documents\NetBeansProjects\Tema4\target\reports\apidocs\allclasses-index.html = 1792499675910
+C:\Users\Usuario\Documents\NetBeansProjects\Tema4\target\reports\apidocs\allpackages-index.html = 1792499675914
+C:\Users\Usuario\Documents\NetBeansProjects\Tema4\target\reports\apidocs\element-list = 1792499675804
+C:\Users\Usuario\Documents\NetBeansProjects\Tema4\target\reports\apidocs\help-doc.html = 1792499675951
+C:\Users\Usuario\Documents\NetBeansProjects\Tema4\target\reports\apidocs\index-all.html = 1792499675937
+C:\Users\Usuario\Documents\NetBeansProjects\Tema4\target\reports\apidocs\index.html = 1792499675889
+C:\Users\Usuario\Documents\NetBeansProjects\Tema4\target\reports\apidocs\member-search-index.js = 1792499675922
+C:\Users\Usuario\Documents\NetBeansProjects\Tema4\target\reports\apidocs\module-search-index.js = 1792499675916
+C:\Users\Usuario\Documents\NetBeansProjects\Tema4\target\reports\apidocs\overview-summary.html = 1792499675945
+C:\Users\Usuario\Documents\NetBeansProjects\Tema4\target\reports\apidocs\overview-tree.html = 1792499675885
+C:\Users\Usuario\Documents\NetBeansProjects\Tema4\target\reports\apidocs\package-search-index.js = 1792499675919
+C:\Users\Usuario\Documents\NetBeansProjects\Tema4\target\reports\apidocs\search.html = 1792499675941
+C:\Users\Usuario\Documents\NetBeansProjects\Tema4\target\reports\apidocs\tag-search-index.js = 1792499675923
+C:\Users\Usuario\Documents\NetBeansProjects\Tema4\target\reports\apidocs\type-search-index.js = 1792499675921
