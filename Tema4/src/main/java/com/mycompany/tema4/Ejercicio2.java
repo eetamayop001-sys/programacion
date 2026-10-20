@@ -29,9 +29,9 @@ public class Ejercicio2 {
        num2 = entrada.nextInt();
        
        if (num1 > 10) {
-            Operaciones.multiplicar(num1, num2);
+            Operaciones2.multiplicar(num1, num2);
         } else {
-            Operaciones.sumar(num1, num2);
+            Operaciones2.sumar(num1, num2);
         }
     }
 }

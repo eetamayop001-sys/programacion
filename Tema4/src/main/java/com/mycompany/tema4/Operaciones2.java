@@ -9,7 +9,7 @@ package com.mycompany.tema4;
  * @author Usuario
  */
 
-public class Operaciones {
+public class Operaciones2 {
 
     // Método estático que multiplica los dos números
     public static void multiplicar(int num1, int num2) {

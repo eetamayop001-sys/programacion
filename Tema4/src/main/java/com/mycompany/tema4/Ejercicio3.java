@@ -4,7 +4,9 @@
  */
 package com.mycompany.tema4;
 
+
 import java.util.Scanner;
+import operacion.Operacion3;
 
 /**
  *
@@ -26,9 +28,10 @@ public class Ejercicio3 {
        
         int num3;
        System.out.println("Por ultimo, introduzca un tercer numero: ");
-       num3 = entrada.nextInt();  
-    }
-    
+       num3 = entrada.nextInt(); 
+      
+       Operacion3.Operacion(num1, num2, num3);
+     }
     
 }
     
