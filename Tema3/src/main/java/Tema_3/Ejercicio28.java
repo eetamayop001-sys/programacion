@@ -19,7 +19,7 @@ public class Ejercicio28 {
 //generamos un numero aleatorio entre 1 y 100     
           double aleatorio =Math.floor(Math.random()*100+1);
           
-          //comprobamos si el  numero es par o impar
+          //comprobamos si el  numero es par o impar 
           if (aleatorio % 2 == 0) {
             System.out.println("El numero es:" +aleatorio); 
             System.out.println("Numero par");

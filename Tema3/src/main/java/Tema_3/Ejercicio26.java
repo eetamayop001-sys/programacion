@@ -14,23 +14,18 @@ public class Ejercicio26 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
-        //creamos las variables
-        int numero = 111;
-        int suma = 0;
+    //creamos las variables    
+    int suma = 0;
 
-        do {
-            // Comprobamos si el número actual es impar
-            if (numero % 2 != 0) {
-                
-                //añade el número par a la suma acumulada
-                suma = suma + numero;
+        //se recorre los números desde el 111 hasta el 222
+        for (int i = 111; i <222; i++) {
+            // Comprobamos si el número es impar
+            if (i % 2 != 0) {
+                suma += i;
             }
-            // se incrementara el numero
-            numero++; 
-        } while (numero < 222);  
-        //muestra el resultado
-        System.out.println("La suma total de los numeros es:" + suma);
+        }
+
+        // se muestra el resultado
+        System.out.println("La suma total de los números impares entre el 111 y el 222 es: " + suma);
     }
-    
 }

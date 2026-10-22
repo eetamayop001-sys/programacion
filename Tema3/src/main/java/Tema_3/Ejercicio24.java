@@ -25,7 +25,7 @@ public class Ejercicio24 {
         int contador = 0; 
 
         do {
-            // Solicita un número al usuario
+            // Solicitamos un número al usuario
             System.out.println("Introduzca un numero mayor que 0:");
             numeroIngresado = entrada.nextInt();
 
@@ -50,4 +50,3 @@ public class Ejercicio24 {
     }
 }
 
-//revisar 

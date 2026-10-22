@@ -33,9 +33,9 @@ public class Ejercicio16 {
             cantidad++;
             }
             numero++;
-            }
+        }
         
         //se imprime la cantidad de numero impares que hay 
-            System.out.println("La cantidad de numeros impares impresos han sido: " + cantidad);  
-    }   }
-//corregir
+        System.out.println("La cantidad de numeros impares impresos han sido: " + cantidad);  
+    }   
+}

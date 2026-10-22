@@ -22,10 +22,13 @@ public class Ejercicio18 {
         int numero = 1234;
         int intentos = 0;
 
+        //le pedimos al usuario su contraseña
         do {
             System.out.print("Por favor, introduzca su contraseña: ");
             contraseña = entrada.nextInt();
 
+            //si digita bien la contraseña
+            
             if (contraseña == numero) {
                 System.out.println("Enhorabuena, tu acceso ha sido concedido");
             } else {
@@ -35,9 +38,9 @@ public class Ejercicio18 {
              
             //numeros de intentos
         } while (contraseña != numero && intentos < 3);
-        if (contraseña == numero) {
+            if (contraseña != numero) {
+            //mensaje que envia el error de acceso    
             System.out.println("Error de acceso. Has superado los 3 intentos.");
-            }
+            } 
     }
 }
-//verificar
