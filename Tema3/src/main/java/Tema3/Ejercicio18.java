@@ -6,12 +6,11 @@ package Tema3;
 
 import java.util.Scanner;
 
+
 /**
  *
  * @author alumno
  */
-import java.util.Scanner;
-
 public class Ejercicio18 {
 
     public static void main(String[] args) {
@@ -27,7 +26,7 @@ public class Ejercicio18 {
             System.out.print("Por favor, introduzca su contraseña: ");
             contraseña = entrada.nextInt();
 
-            //si digita bien la contraseña
+            // usamos un if y else por si digita bien la contraseña o si es incorrecta
             
             if (contraseña == numero) {
                 System.out.println("Enhorabuena, tu acceso ha sido concedido");
