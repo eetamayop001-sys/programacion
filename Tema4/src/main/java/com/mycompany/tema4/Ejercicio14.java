@@ -17,45 +17,53 @@ public class Ejercicio14 {
      */
     
     public static int pedirNumero(){
-        int dato;
         Scanner entrada = new Scanner(System.in);
-        System.out.print("Introduzca un numero para calcular su tabla de multiplicar: ");
-        dato= entrada.nextInt();     
-        return dato;
+        System.out.print("Introduzca un numero para calcular su tabla de multiplicar: "); 
+        return entrada.nextInt();
     }
     
-    public static void comprobar(int dato){
+    /**
+     * Metodo para comprobar que el numero sea mayor que 0
+     * @param dato 
+     */
+    
+    public static int comprobar(int numeroIngresado){
 //iniciamos el bucle 
-        while (dato < 0) {           
-// Comprobamos si el número actual es impar
-
-            if (dato < 0) {
-                System.out.println("ERROR, NUMERO INVALIDO");
-            }    
+        if (numeroIngresado > 0) {
+            return numeroIngresado;
+        } else {
+            System.out.println("ERROR, NUMERO INVALIDO");
+            return 0;
+        }
     }
-    }
-    public static int calcculos(int dato){
+    
+    
+    
+    public static void resultado(){
    
-        int contador=0;
-        
-        for (int i = 1; i <= dato; i++) {
+        int numeroIngresado;
 
-            // Comprueba si el número es múltiplo de 3
+        do {
+            numeroIngresado = pedirNumero();
+            numeroIngresado = comprobar(numeroIngresado);
+        } while (numeroIngresado == 0);
+
+        int contador = 0;
+
+        for (int i = 1; i <= numeroIngresado; i++) {
             if (i % 3 == 0) {
                 System.out.println(i);
-                // Aumenta el contador
                 contador++;
             }
         }
-        //muestra el total de múltiplos de 3 encontrados
+
         System.out.println("Total de numeros mostrados: " + contador);
-        return dato;
     }
     
     
     public static void main(String[] args) {
         // TODO code application logic here
-         int dato = pedirNumero(); 
+         resultado(); 
 
         
     }    

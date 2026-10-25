@@ -22,29 +22,34 @@ public class Ejercicio13 {
         return entrada.nextInt();
     }  
     
-    public static boolean comprobar(){
-        int numeroIngresado;
-        //usamos while 
-        
-        while(numeroIngresado <1){       
-            //usamos un if para que aparezca el mensaje de error si el usuario ingresa un numero menor que 1 
-            if(numeroIngresado <1){
-               System.out.println("ERROR, NUMERO INVALIDO  ");
-            } 
-        }        
-     
-        //Usamos for porque sabemos desde donde empieza si el usuario ingresa un numero mayor a 1
-        for(int i=1; i<numeroIngresado; i++){
-        System.out.println(i);         
+    public static boolean comprobar(int numeroIngresado){
+         if (numeroIngresado > 1) {
+            return true;
+        } else {
+            return false;
         }
-        return true;
+    }
+    
+    public static void resultado(){
+        int numeroIngresado;
+
+        do {
+            numeroIngresado = pedirNumero();
+
+            if (comprobar(numeroIngresado)==false) {
+                System.out.println("Error: debes introducir un numero mayor que 1.");
+            }
+
+        } while (comprobar(numeroIngresado) !=true);
+
+        for (int i = 1; i <= numeroIngresado; i++) {
+            System.out.println(i);
+        }
     }
     
     public static void main(String[] args) {
         // TODO code application logic here
-        int num1 = pedirNumero(); 
-        boolean resultado = comprobar(numeroIngresado);
-
+        resultado();
 
     }
     
