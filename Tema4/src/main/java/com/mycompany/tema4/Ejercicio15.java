@@ -98,3 +98,4 @@ public class Ejercicio15 {
         } while (opc != 5);
     }
 }
+//se usò un do while, en mostrar menu 

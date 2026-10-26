@@ -13,7 +13,8 @@ import java.util.Scanner;
 public class Ejercicio10 {
 
     /**
-     * @param args the command line arguments
+     * Metodo para pedirle el numero al usuario
+     * @return 
      */
     
     public static int pedirNumero(){
@@ -22,13 +23,18 @@ public class Ejercicio10 {
         return entrada.nextInt();          
     }
     
+    /**
+     * Metodo para realizar la tabla de multiplicar
+     * @param num1 
+     */
+    
     public static void tablaMultiplicar(int num1){
      // Calculamos e imprimimos la tabla 
         for (int i = 0; i <= 12; i++) {
             System.out.println(num1 + " x " + i + " = " + (num1 * i));
         } 
     }
-            
+                
     public static void main(String[] args) {
         // TODO code application logic here
         //llamamos al metodo pedir numero

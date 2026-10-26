@@ -24,9 +24,5 @@ public class Funcion4 {
         }
     }
 
-    static void funcion(int num1, int num2, int num3) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
     
 }

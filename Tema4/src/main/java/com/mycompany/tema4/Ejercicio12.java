@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 
+import static com.mycompany.tema4.Ejercicio10.pedirNumero;
 import java.util.Scanner;
 
 /**
@@ -14,8 +15,7 @@ public class Ejercicio12 {
     /**Metodo para pedir la contraseña al usuario
      * @param args the command line arguments
      */
-    
-    int numero =1234;
+
     
     public static int pedirContraseña(){
         Scanner entrada = new Scanner(System.in);
@@ -30,6 +30,7 @@ public class Ejercicio12 {
      * @return 
      */
     public static boolean comprobar(int contraseña, int numero){
+        
         if (contraseña == numero) {
         return true;
     } else {
@@ -64,6 +65,9 @@ public class Ejercicio12 {
     }
     
    public static void main(String[] args) {
+       //llamamos al metodo resultado
         resultado();
     } 
 }
+
+//corregir, el metodo resultado debe de devolver entre parentesis un boolean

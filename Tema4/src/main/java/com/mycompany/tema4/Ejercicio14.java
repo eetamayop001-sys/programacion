@@ -24,11 +24,10 @@ public class Ejercicio14 {
     
     /**
      * Metodo para comprobar que el numero sea mayor que 0
-     * @param dato 
+     * @param 
      */
     
     public static int comprobar(int numeroIngresado){
-//iniciamos el bucle 
         if (numeroIngresado > 0) {
             return numeroIngresado;
         } else {
@@ -37,7 +36,9 @@ public class Ejercicio14 {
         }
     }
     
-    
+    /**
+     * Metodo para comprobar el resultado
+     */
     
     public static void resultado(){
    
@@ -62,9 +63,13 @@ public class Ejercicio14 {
     
     
     public static void main(String[] args) {
-        // TODO code application logic here
-         resultado(); 
+        // //llamamos al metodo resultado
+        resultado(); 
 
         
     }    
 }
+
+//corregir el pedir numero desde el main y el bucle do while que se muestra en el resultado
+//arreglar el main, ahi debe de ir 
+//
