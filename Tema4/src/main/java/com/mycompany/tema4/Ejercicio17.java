@@ -4,6 +4,8 @@
  */
 package com.mycompany.tema4;
 
+import java.util.Scanner;
+
 /**
  *
  * @author alumno
@@ -15,6 +17,11 @@ public class Ejercicio17 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Scanner entrada = new Scanner(System.in);
+        System.out.println("Por favor ingresa un numero:");
+        double aleatorio =Math.floor(Math.random()*97+122);
+        char letra =entrada.nextLine().chartArt(o);
+
     }
     
 }
