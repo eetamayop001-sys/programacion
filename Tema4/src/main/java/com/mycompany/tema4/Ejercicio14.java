@@ -18,7 +18,7 @@ public class Ejercicio14 {
     
     public static int pedirNumero(){
         Scanner entrada = new Scanner(System.in);
-        System.out.print("Introduzca un numero para calcular su tabla de multiplicar: "); 
+        System.out.print("Introduzca un numero: "); 
         return entrada.nextInt();
     }
     

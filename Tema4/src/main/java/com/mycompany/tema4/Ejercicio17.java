@@ -45,3 +45,6 @@ public class Ejercicio17 {
         System.out.println("Intentos realizados: " + intentos);
     }
 }
+
+//esta correcta poner el metodo char 
+//generar el aleatorio en un metodo

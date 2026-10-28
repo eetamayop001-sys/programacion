@@ -24,9 +24,7 @@ public class Ejercicio19 {
         String dia = entrada.nextLine();
 
         return dia;
-    }
-    
-    
+    }      
     
     public static void main(String[] args) {
         // TODO code application logic here
@@ -34,7 +32,7 @@ public class Ejercicio19 {
         String diadelasemana = pedirDiaSemana();
 
         // Comprobamos el día introducido
-        switch (diadelasemana) {
+        switch (diadelasemana.toLowerCase()) {
             case "Lunes" ->
                 System.out.println("El Lunes es el primer día de la semana");
             case "Martes" ->
@@ -55,3 +53,5 @@ public class Ejercicio19 {
     }
     
 }
+
+//corregir en el tolowerCase
