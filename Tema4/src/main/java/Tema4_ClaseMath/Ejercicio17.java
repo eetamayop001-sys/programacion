@@ -1,4 +1,4 @@
-package com.mycompany.tema4;
+package Tema4_ClaseMath;
 
 import java.util.Scanner;
 

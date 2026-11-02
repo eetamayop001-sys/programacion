@@ -1,5 +1,5 @@
 
-package com.mycompany.tema4;
+package Tema4_ClaseMath;
 
 public class Ejercicio16 {
 

@@ -2,23 +2,18 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.mycompany.tema4;
+package Tema4metodosEstaticos;
 
+import Tema4metodosEstaticos.Funcion4;
 import java.util.Scanner;
+
 
 /**
  *
- * @author Usuario
+ * @author alumno
  */
-public class Ejercicio2 {
-     
-    /**
-     *
-     * @param args
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-       
+public class Ejercicio4 {
+        public static void main(String[] args) {
        Scanner entrada = new Scanner(System.in);
        int num1;
        System.out.println("Por favor, introduzca un numero: ");
@@ -28,10 +23,10 @@ public class Ejercicio2 {
        System.out.println("Ahora, introduzca un segundo numero: ");
        num2 = entrada.nextInt();
        
-       if (num1 > 10) {
-            Operaciones2.multiplicar(num1, num2);
-        } else {
-            Operaciones2.sumar(num1, num2);
-        }
-    }
+        int num3;
+       System.out.println("Por ultimo, introduzca un tercer numero: ");
+       num3 = entrada.nextInt(); 
+      
+       Funcion4.operacion(num1, num2, num3);
+     }
 }

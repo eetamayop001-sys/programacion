@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  */
 
-package com.mycompany.tema4;
+package Tema4metodosEstaticos;
 
 import java.util.Scanner;
 

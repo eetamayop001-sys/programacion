@@ -2,9 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package com.mycompany.tema4;
+package Tema4metodosEstaticos;
 
-import static com.mycompany.tema4.Ejercicio6.comprobar;
+import static Tema4metodosEstaticos.Ejercicio6.comprobar;
 import java.util.Scanner;
 
 /**

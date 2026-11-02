@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package com.mycompany.tema4;
+package Tema4_Consolidacion;
 
 import java.util.Scanner;
 
@@ -38,8 +38,10 @@ public class Ejercicio27 {
             System.out.println("El numero es:" +aleatorio);  
             System.out.println("Numero impar");
           }
+        int adivinar;
         
-        
-    }
+          
+          
     
+ }   
 }
