@@ -11,7 +11,7 @@ package Tema4_Consolidacion;
 public class Constantes {
 
     /**
-     * Constante que tiene e numero de la velocidad de la luz
+     * Constantes
      */
     
     public final static double velocidadLuz = 299792458;    
@@ -19,6 +19,5 @@ public class Constantes {
     public final static double constanteuniversalGravitacion = 6.67430E-11;
     
     public final static double constanteplanck  = 6.62607015E-34; 
-     
-    
+        
 }

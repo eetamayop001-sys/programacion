@@ -16,35 +16,34 @@ public class Ejercicio25 {
      * @param args the command line arguments
      */
     
-     public static double calcularPotencia(double a, double b) {
-
-        //comprueba si la base es cero y el exponente negativo
-         if (a == 0 && b < 0) {
-            System.out.println("El resultado es infinito");
-            return 0;
-        } else {
-           //calculamos la potnecia con el metodo Math
-            double elevarExponente = Math.pow(a, b);
-            //devuelve el resultado de la potencia
-            return elevarExponente;
-        }
+        // Método que calcula la potencia
+    public static double calcularPotencia(int a, int b) {
+        return Math.pow(a, b);  
     }
      
     
     public static void main(String[] args) {
         // llama al metodo 
-    Scanner scanner = new Scanner(System.in);
+        Scanner entrada = new Scanner(System.in);
 
-        // Pedimos la base como número entero
-        System.out.print("Introduce el número base (a): ");
-        int a = scanner.nextInt();
+        // Pedimos la base
+        System.out.print("Introduce la base: ");
+        int a = entrada.nextInt();
 
-        // Pedimos el exponente como número entero
-        System.out.print("Introduce el exponente (b): ");
-        int b = scanner.nextInt();
-        
-    double resultado = calcularPotencia(a, b);
-    System.out.println("El resultado de la potencia es: " + resultado);
+        // Pedimos el exponente
+        System.out.print("Introduce el exponente: ");
+        int b = entrada.nextInt();
+
+        // Comprobamos si la base es 0 y el exponente negativo
+        if (a == 0 && b < 0) {
+            System.out.println("Error: el resultado es infinito.");
+        } else {
+
+            // Calculamos la potencia
+            double resultado = calcularPotencia(a, b);
+
+            // Mostramos el resultado
+            System.out.println("El resultado es: " + resultado);
+        }
     }
-    
 }
