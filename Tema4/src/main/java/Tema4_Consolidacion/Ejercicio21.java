@@ -69,3 +69,5 @@ public class Ejercicio21 {
     }
     
 }
+
+//otraa opcion es poner otro numero 

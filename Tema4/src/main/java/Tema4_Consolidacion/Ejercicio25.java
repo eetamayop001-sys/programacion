@@ -1,21 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
+
 package Tema4_Consolidacion;
 
 import java.util.Scanner;
 
-/**
- *
- * @author alumno
- */
 public class Ejercicio25 {
 
-    /**
-     * @param args the command line arguments
-     */
-    
     // Método que calcula la potencia de una base elevada a un exponente
     public static double calcularPotencia(double a, int b) {
 
@@ -37,7 +26,6 @@ public class Ejercicio25 {
         }
     }
 
-    // Método principal donde comienza el programa
     public static void main(String[] args) {
 
         // Creamos el Scanner para leer los datos
@@ -58,5 +46,6 @@ public class Ejercicio25 {
         if (a != 0 || b >= 0) {
             System.out.println("El resultado de la potencia es: " + resultado);
         }
+
     }
 }
