@@ -1,3 +1,4 @@
+
 package Tema4_ClaseMath;
 
 import java.util.Scanner;
@@ -14,13 +15,20 @@ public class Ejercicio17 {
         char letra = entrada.nextLine().charAt(0);
         return letra;
     }
-    
+
+    /**
+     * Metodo que genera una letra aleatoria entre a y z
+     * @return letraAleatoria
+     */
+    public static char generarLetraAleatoria() {
+        char letraAleatoria = (char) (Math.random() * 26 + 97);
+        return letraAleatoria;
+    }
+
     public static void main(String[] args) {
 
-        Scanner entrada = new Scanner(System.in);
-
         // Generamos la letra aleatoria
-        char letraAleatoria = (char) (Math.random() * 26 + 97);
+        char letraAleatoria = generarLetraAleatoria();
 
         // Contamos los intentos
         int intentos = 0;
@@ -45,6 +53,3 @@ public class Ejercicio17 {
         System.out.println("Intentos realizados: " + intentos);
     }
 }
-
-//esta correcta poner el metodo char 
-//generar el aleatorio en un metodo

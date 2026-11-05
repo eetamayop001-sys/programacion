@@ -16,42 +16,36 @@ public class Ejercicio14 {
      * @param args the command line arguments
      */
     
-    public static int pedirNumero(){
+    // Metodo para pedir el numero
+    public static int pedirNumero() {
         Scanner entrada = new Scanner(System.in);
-        System.out.print("Introduzca un numero: "); 
+        System.out.print("Introduce un numero mayor que 0: ");
         return entrada.nextInt();
     }
-    
-    /**
-     * Metodo para comprobar que el numero sea mayor que 0
-     * @param 
-     */
-    
-    public static int comprobar(int numeroIngresado){
-        if (numeroIngresado > 0) {
-            return numeroIngresado;
-        } else {
-            System.out.println("ERROR, NUMERO INVALIDO");
-            return 0;
-        }
-    }
-    
-    /**
-     * Metodo para comprobar el resultado
-     */
-    
-    public static void resultado(){
-   
-        int numeroIngresado;
+
+    // Metodo para comprobar que el numero sea mayor que 0
+    public static int comprobarNumero(int numero) {
 
         do {
-            numeroIngresado = pedirNumero();
-            numeroIngresado = comprobar(numeroIngresado);
-        } while (numeroIngresado == 0);
+            if (numero <= 0) {
+                System.out.println("ERROR: El numero debe ser mayor que 0.");
+                numero = pedirNumero();
+            }
+
+        } while (numero <= 0);
+
+        return numero;
+    }
+
+    // Metodo para calcular y mostrar los multiplos de 3
+    public static void mostrarMultiplos(int numero) {
 
         int contador = 0;
 
-        for (int i = 1; i <= numeroIngresado; i++) {
+        System.out.println("Los multiplos de 3 entre 1 y " + numero + " son:");
+
+        for (int i = 1; i <= numero; i++) {
+
             if (i % 3 == 0) {
                 System.out.println(i);
                 contador++;
@@ -60,16 +54,16 @@ public class Ejercicio14 {
 
         System.out.println("Total de numeros mostrados: " + contador);
     }
-    
-    
+
+    // Metodo principal
     public static void main(String[] args) {
-        // //llamamos al metodo resultado
-        resultado(); 
 
-        
-    }    
+        int numero = pedirNumero();
+
+        numero = comprobarNumero(numero);
+
+        mostrarMultiplos(numero);
+
+    }
 }
-
-//corregir el pedir numero desde el main y el bucle do while que se muestra en el resultado
-//arreglar el main, ahi debe de ir 
-//
+   

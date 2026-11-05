@@ -16,35 +16,47 @@ public class Ejercicio25 {
      * @param args the command line arguments
      */
     
-     public static double calcularPotencia(double a, double b) {
+    // Método que calcula la potencia de una base elevada a un exponente
+    public static double calcularPotencia(double a, int b) {
 
-        //comprueba si la base es cero y el exponente negativo
-         if (a == 0 && b < 0) {
+        // Comprobamos si la base es 0 y el exponente es negativo
+        if (a == 0 && b < 0) {
+
+            // Mostramos un mensaje indicando que el resultado es infinito
             System.out.println("El resultado es infinito");
+
             return 0;
+
         } else {
-           //calculamos la potnecia con el metodo Math
+
+            // Calculamos la potencia utilizando Math.pow()
             double elevarExponente = Math.pow(a, b);
-            //devuelve el resultado de la potencia
+
+            // Devolvemos el resultado de la potencia
             return elevarExponente;
         }
     }
-     
-    
+
+    // Método principal donde comienza el programa
     public static void main(String[] args) {
-        // llama al metodo 
-    Scanner scanner = new Scanner(System.in);
 
-        // Pedimos la base como número entero
-        System.out.print("Introduce el número base (a): ");
-        int a = scanner.nextInt();
+        // Creamos el Scanner para leer los datos
+        Scanner entrada = new Scanner(System.in);
 
-        // Pedimos el exponente como número entero
-        System.out.print("Introduce el exponente (b): ");
-        int b = scanner.nextInt();
-        
-    double resultado = calcularPotencia(a, b);
-    System.out.println("El resultado de la potencia es: " + resultado);
+        // Pedimos la base al usuario
+        System.out.print("Introduzca la base: ");
+        double a = entrada.nextDouble();
+
+        // Pedimos el exponente al usuario
+        System.out.print("Introduzca el exponente: ");
+        int b = entrada.nextInt();
+
+        // Llamamos al método para calcular la potencia
+        double resultado = calcularPotencia(a, b);
+
+        // Mostramos el resultado cuando no se trata del caso especial
+        if (a != 0 || b >= 0) {
+            System.out.println("El resultado de la potencia es: " + resultado);
+        }
     }
-    
 }

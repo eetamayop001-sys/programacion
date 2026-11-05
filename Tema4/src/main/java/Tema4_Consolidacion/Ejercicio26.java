@@ -16,45 +16,40 @@ public class Ejercicio26 {
      * @param args the command line arguments
      */
     
-   // Método que comprueba si un número es primo
+    // Metodo para comprobar si un numero es primo
     public static boolean esPrimo(int numero) {
 
-        // Los números menores o iguales a 1 no son primos
+        boolean primo = true;
+        int divisor = 2;
+
         if (numero <= 1) {
-            return false;
-        }
-
-        // Comprobamos si tiene algún divisor desde el 2
-        for (int i = 2; i < numero; i++) {
-
-            // Si el resto es 0, significa que tiene otro divisor
-            if (numero % i == 0) {
-                return false;
-            }
-        }
-
-        // Si no encontramos divisores, el número es primo
-        return true;
-    }
-
-    public static void main(String[] args) {
-
-        // Creamos el Scanner para leer el número
-        Scanner entrada = new Scanner(System.in);
-
-        // Pedimos un número al usuario
-        System.out.print("Introduzca un numero: ");
-        int numero = entrada.nextInt();
-
-        // Comprobamos si el número es primo
-        if (esPrimo(numero)) {
-
-            System.out.println("El numero " + numero + " es primo.");
-
+            primo = false;
         } else {
 
-            System.out.println("El numero " + numero + " no es primo.");
+            while (divisor < numero && primo) {
 
+                if (numero % divisor == 0) {
+                    primo = false;
+                }
+
+                divisor++;
+            }
+        }
+        return primo;
+    }
+
+    // Metodo principal
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        System.out.print("Introduce un numero entero: ");
+        int numero = entrada.nextInt();
+
+        boolean resultado = esPrimo(numero);
+
+        if (resultado) {
+            System.out.println("El numero " + numero + " es primo.");
+        } else {
+            System.out.println("El numero " + numero + " no es primo.");
         }
     }
 }
